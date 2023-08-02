@@ -1,4 +1,6 @@
 
 
 /node_modules
-/src/.env
+.env.PORT
+.env.JWT_ACCESS_KEY
+.env.JWT_REFRESH_KEY

@@ -21,6 +21,11 @@ app.options("*", cors());
 
 app.use('/auth',authRouter);
 app.use('/user',userRouter);
+app.use('/test',(req, res, next) =>{
+    res.status(200).json({
+        status : "Connect to server successfully",
+    })
+})
 
 app.use((err, req, res ,next) => {
     console.log(err);
